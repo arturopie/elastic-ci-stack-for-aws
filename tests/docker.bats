@@ -9,5 +9,5 @@
   run docker run -v "$PWD:/pwd" --rm -it alpine:latest mkdir /pwd/llamas
  	[ $status = 0 ]
   stat llamas
-  stat llamas | grep 'Uid: (  501/buildkite-agent)   Gid: (  501/  docker)'
+  stat llamas | grep 'Uid: (  2001/buildkite-agent)   Gid: (  2001/  docker)'
 }
